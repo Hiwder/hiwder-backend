@@ -1,4 +1,4 @@
-from __main__ import app
+from app import app
 from flask import make_response, request
 from modules.beam import BeamRoute
 from modules.walk import WalkRoute
