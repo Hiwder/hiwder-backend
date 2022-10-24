@@ -1,9 +1,16 @@
 from __main__ import app
-from flask import make_response
+from flask import make_response, request
+from modules.beam import BeamRoute
+from modules.walk import WalkRoute
 
 @app.route('/beam', methods=['POST'])
 def beam():
-    return make_response({"test" : "Success"}, 200)
+    data = request.get_json()
+    if ("org" and "dst") in data:
+        beam = BeamRoute(data["org"], data["dst"])
+        return make_response(beam.createResponse(), 200)
+    else:
+        return make_response({"error" : "this api request 2 parameters ([org], [dst])"}, 200)
 
 @app.route('/popbus', methods=['POST'])
 def popbus():
@@ -11,4 +18,9 @@ def popbus():
 
 @app.route('/walk', methods=['POST'])
 def walk():
-    return make_response({"walk" : "This feature is unavailable"}, 200)
+    data = request.get_json()
+    if ("org" and "dst") in data:
+        walk = WalkRoute(data["org"], data["dst"])
+        return make_response(walk.createResponse(), 200)
+    else:
+        return make_response({"error" : "this api request 2 parameters ([org], [dst])"}, 200)

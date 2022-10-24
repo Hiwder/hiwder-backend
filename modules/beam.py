@@ -3,8 +3,8 @@ import geopy.distance
 class BeamRoute:
 
     def __init__(self, org, dst):
-        self.org = org
-        self.dst = dst
+        self.org = tuple(org)
+        self.dst = tuple(dst)
         self.station =  {
                 (13.736575, 100.531838) : "Jakkrapong yard",
                 (13.736094, 100.531109) : "Faculty of Science",
