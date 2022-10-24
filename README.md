@@ -15,6 +15,8 @@ Clone this repo and run command follow below.
     
 ## API Reference
 
+host url : https://hiwder-tazrzv72fq-as.a.run.app/
+
 [Postman API collection](https://www.getpostman.com/collections/222dd37d9996b179da24)
 
 
