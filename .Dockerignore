@@ -1,4 +1,5 @@
 venv
+__pycache__
 modules/__pycache__
 routes/__pycache__
 create_item.py
