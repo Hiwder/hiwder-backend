@@ -1,3 +1,5 @@
 flask
 geopy
 firebase_admin
+flask-cors
+gunicorn

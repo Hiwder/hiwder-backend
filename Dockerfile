@@ -2,7 +2,7 @@ FROM python:3.8
 
 WORKDIR /python-docker
 
-RUN pip install flask gunicorn geopy firebase_admin
+RUN pip install flask gunicorn geopy firebase_admin flask-cors
 
 COPY . .
 
