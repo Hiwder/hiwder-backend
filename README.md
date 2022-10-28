@@ -17,7 +17,7 @@ Clone this repo and run command follow below.
 
 host url : https://hiwder-tazrzv72fq-as.a.run.app/
 
-[Postman API collection](https://www.getpostman.com/collections/222dd37d9996b179da24)
+[Postman API collection](https://www.postman.com/deeybydeex/workspace/hiwder/collection/14105357-2a1ddce6-54b1-4b48-94b5-14c8141e2e73?action=share&creator=14105357)
 
 
 
